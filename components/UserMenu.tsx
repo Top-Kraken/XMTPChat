@@ -100,7 +100,7 @@ const UserMenu = ({ onConnect, onDisconnect, isFiltered, showFiltered }: UserMen
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        });
+      });
       console.log((e as Error).message)
     }
   }

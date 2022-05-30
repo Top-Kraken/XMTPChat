@@ -82,7 +82,9 @@ const ConversationsPanel = ({ isFiltered, walletAddress }: ConversationsPanelPro
 
   useEffect(() => {
     cyberConnectClient
-      .request(GET_CONNECTIONS, walletAddress)
+      .request(GET_CONNECTIONS, {
+        address: walletAddress
+      })
       .then((res) => {
         const addresses = res?.identity?.followings?.list
         setFollowings(addresses.map((item: any) => item.address))
@@ -116,7 +118,7 @@ const ConversationsPanel = ({ isFiltered, walletAddress }: ConversationsPanelPro
 
   return filtered && filtered.length > 0 ? (
     <nav className="flex-1 pb-4 space-y-1">
-      <ConversationsList conversations={filtered} />
+      <ConversationsList conversations={filtered} followings={followings} />
     </nav>
   ) : (
     <NoConversationsMessage />
