@@ -1,3 +1,11 @@
+# XMTP Chat with CyberConnect
+Title: XMTP Chat with CyberConnect (ETH Shanghai Hackathon)
+Description: Implemented CyberConnect functions in XMTP Chat project.
+Website: http://xmtpchat.herokuapp.com/
+Screenshot:
+![image](https://user-images.githubusercontent.com/86540499/171000456-4a247025-3ffa-4976-8736-68956371d2d3.png)
+![image](https://user-images.githubusercontent.com/86540499/171000526-9212d527-bca4-4f06-95e6-6f54b40692e9.png)
+
 # React Chat Example
 
 ![Test](https://github.com/xmtp/example-chat-react/actions/workflows/test.yml/badge.svg)
